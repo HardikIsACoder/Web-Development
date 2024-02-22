@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Skill Survey Form</h1>
+            <p class="description text-center" id="description">This is a form made by Hardik Agrawal</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input id="name" placeholder="Enter your name" class="form-control" type="text" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input id="email" class="form-control" placeholder="Enter your email" required type="email">
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age <span class="clue">(optional)</span></label>
+                <input type="number" class="form-control" placeholder="Age" name="age" id="number" min="10" max="99">
+            </div>
+            <div class="form-group">
+                <p>Which branch are you in?</p>
+                <select name="skills" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select your branch</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="cc">Cyber Security</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you like to participate in Hackathon?</p>
+                <label><input class="input-radio" value="Definitely" name="input-radio" type="radio"
+                        checked />Definitely</label>
+                <label><input class="input-radio" name="input-radio" value="Maybe" type="radio" />Maybe</label>
+                <label><input value="I-will" class="input-radio" name="input-radio" type="radio" />I will think about
+                    it.</label>
+            </div>
+            <div class="form-group">
+                <p>What are the skills you currently have?<span>(Check all that apply)</span></p>
+                <label><input type="checkbox" name="prefer" value="C" class="input-checkbox" id="input-checkbox" />C
+                    Programming</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="cpp" id="input-checkbox" />C++
+                    Programming</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="java"
+                        id="input-checkbox" />Java Programming</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="python"
+                        id="input-checkbox" />Python Programming</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="ml"
+                        id="input-checkbox" />Machine Learning</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="webd"
+                        id="input-checkbox" />Web Development</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="git" id="input-checkbox" />Git
+                    and Version Control</label>
+                <label><input type="checkbox" class="input-checkbox" name="prefer" value="appdev" id="input-checkbox"/>App Development</label>
+            </div>
+            <div class="form-group">
+                <p>What are the skills you are looking forward to learn?</p>
+                <textarea name="upgrades" id="upgrades" class="input-textarea" placeholder="Enter the skills that excite you..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
